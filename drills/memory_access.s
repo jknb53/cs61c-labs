@@ -4,7 +4,7 @@ my_array:
 
 .text
 .global _start
-    _start:
+_start:
     # ld t0 , my_array
     la t0 , my_array
     lw t1 , 4(t0)

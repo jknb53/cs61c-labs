@@ -5,7 +5,7 @@
 # ====================================================================
 
 CC = riscv64-unknown-elf-gcc
-CFLAGS = -nostdlib
+CFLAGS = -nostdlib -march=rv64imafd -mabi=lp64d -Wl,--section-start=.text=0x10000 -Wl,--section-start=.data=0x20000
 QEMU = qemu-riscv64
 
 TARGET ?= # Must be provided from command line

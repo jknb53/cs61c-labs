@@ -10,7 +10,7 @@ _start:
 loop:
     beq t2 , t0 , end_loop 
     add t1 , t1 , t2
-    addi t2 , t2 , 1
+    addi t2 , t2 , 1//pipline
     j loop
 
 end_loop:
